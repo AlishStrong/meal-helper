@@ -7,7 +7,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "build-prod": "ng build --prod",
+    "test": "ng test --watch=false --browsers=ChromeHeadless",
+    "test-log": "ng test --watch=false --browsers=ChromeHeadless --progress=false > test.log",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
